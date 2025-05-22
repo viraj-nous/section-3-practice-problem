@@ -1,0 +1,10 @@
+name: A new issue has been opened
+on:
+  issues:
+    types: [opened]
+jobs:
+  print-issue-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output issue details
+        run: echo "Issue details ${{ github.event }}"
