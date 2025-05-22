@@ -1,7 +1,5 @@
-name: A new issue has been opened
-on:
-  issues:
-    types: [opened]
+name: A new issue activity happened
+on: issues
 jobs:
   print-issue-info:
     runs-on: ubuntu-latest
